@@ -12,23 +12,26 @@
 </head>
 <body>
 
-    <nav class="nav-menu" id="menu">
-        <div class="logo" id="nd-logo">
-            <a href="http://www.stud.fit.vutbr.cz/~xdudov01/ITWproj2/index.html" class="logo"><img src="mylogo.png" class="logo"></a>
+    <nav class="navbar">
+        <div class="nav-menu" id="menu">
+            <div class="logo" id="nd-logo">
+                <a href="http://www.stud.fit.vutbr.cz/~xdudov01/ITWproj2/index.html" class="logo"><img src="mylogo.png" class="logo"></a>
+            </div>
+            <div class="dropbtn">
+                <button onclick="showMenu()" class="dropbtn" id="drop-button"><img src="open-menu.png" class="dropbtn" id="drop-image"></button>
+            </div>
         </div>
-        <div class="dropdown" id="dd">
-            <a onclick="showMenu()" class="dropbtn"><img src="open-menu.png" class="dropbtn"></a>
-            <div id="myDropdown" class="dropdown-content">
-                <ul>            
-                    <li class="sectionref"><a href="#section-aboutme">About me</a></li>
-                    <li class="sectionref"><a href="#section-education">Education</a></li>
-                    <li class="sectionref"><a href="#section-work">Work</a></li>
-                    <li class="sectionref"><a href="#section-projects">Projects</a></li>
-                    <li class="sectionref"><a href="#section-contact">Contact</a></li>
-                </ul>
-            </div> 
-        </div>
+        <div id="myDropdown" class="dropdown-content">
+            <ul>            
+                <li class="sectionref"><a href="#section-aboutme">About me</a></li>
+                <li class="sectionref"><a href="#section-education">Education</a></li>
+                <li class="sectionref"><a href="#section-work">Work</a></li>
+                <li class="sectionref"><a href="#section-projects">Projects</a></li>
+                <li class="sectionref"><a href="#section-contact">Contact</a></li>
+            </ul>
+        </div> 
     </nav>
+    
                       
     <div id="main">  
         <div id="empty">
