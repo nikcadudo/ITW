@@ -90,6 +90,7 @@ section {
 
 .workexp li {
     display: flex;
+    overflow-wrap: break-word;
     padding-bottom: 20px;
 }
 
@@ -101,7 +102,6 @@ section {
 .school, .job {
     float: left;
     width: 70%;
-    padding-right: 20px;
     padding-top: 20px;
 }
 
@@ -189,10 +189,11 @@ h3 {
 }
 
 #section-contact img{
-    width: 10%;
+    width: 5%;
     padding: 10px;
 }
 
+/*instagram widget i am planning to put there afterwards*/
 /*.elfsight-app-3541d2ab-ec61-4cd1-8811-3ab8711e35b4 {
     margin: 0 auto;
 }*/
@@ -217,6 +218,7 @@ h3 {
     font-weight: bold;
     background-position: bottom;
 }
+
 
 @media (min-width: 1200px){
     html {
@@ -344,7 +346,8 @@ h3 {
     }
 }
 
-@media (max-width: 576px){
+/*rozlozeni pro telefony - misto tlacitek v navigacnim okne je burger menu*/
+@media (max-width: 1199px){
     .icon {
         display: none;
     }
