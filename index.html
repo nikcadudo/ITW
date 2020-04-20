@@ -10,19 +10,24 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='main.js'></script>
 </head>
-<body>    
-    <nav id="navbar">            
-        <ul class="navbar-nav">
-            <li><a href="http://www.stud.fit.vutbr.cz/~xdudov01/ITWproj2/index.html"><img src="mylogo.png" class="logo"></a></li>
-            <li class="sectionref"><a href="#section-aboutme">About me</a></li>
-            <li class="sectionref"><a href="#section-education">Education</a></li>
-            <li class="sectionref"><a href="#section-work">Work</a></li>
-            <li class="sectionref"><a href="#section-projects">Projects</a></li>
-            <li class="sectionref"><a href="#section-contact">Contact</a></li>
-        </ul>
-        <a href="javascript:void(0);" class="ham-menu" onclick="showMenu()">
-            <img src="open-menu.png"></img>
-        </a>
+<body>
+
+    <nav class="nav-menu">
+        <div class="logo" id="nd-logo">
+            <a href="http://www.stud.fit.vutbr.cz/~xdudov01/ITWproj2/index.html" class="logo"><img src="mylogo.png" class="logo"></a>
+        </div>
+        <div class="dropdown" id="dd">
+            <a onclick="showMenu()" class="dropbtn"><img src="open-menu.png" class="dropbtn"></a>
+            <div id="myDropdown" class="dropdown-content">
+                <ul>            
+                    <li class="sectionref"><a href="#section-aboutme">About me</a></li>
+                    <li class="sectionref"><a href="#section-education">Education</a></li>
+                    <li class="sectionref"><a href="#section-work">Work</a></li>
+                    <li class="sectionref"><a href="#section-projects">Projects</a></li>
+                    <li class="sectionref"><a href="#section-contact">Contact</a></li>
+                </ul>
+            </div> 
+        </div>
     </nav>
                       
     <div id="main">  
@@ -102,7 +107,7 @@
                             <div class="job">
                                 <h3>Invia, a.s.</h3>
                                 <subtitle class="position">HR assistant</subtitle>
-                                <p>My job was to prepare contracts and dismissals and putting these into a card files. I was only helping when they had too much work.</p>
+                                <p>My job was to prepare contracts and dismissals and putting these into card files. I was only helping when they had too much work.</p>
                             </div>                             
                         </li> 
                         <li>
@@ -185,8 +190,8 @@
                 <a href="https://www.linkedin.com/in/nikol-dudov%C3%A1-2a56b4173/"><img src="linkedin.png"></a>
                 <a href="https://www.instagram.com/niikenka/"><img src="instagram.png"></a>
             </div>  
-            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-            <div class="elfsight-app-3541d2ab-ec61-4cd1-8811-3ab8711e35b4"></div>         
+            <!--script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-3541d2ab-ec61-4cd1-8811-3ab8711e35b4"></div-->         
         </section>
     </div>
     

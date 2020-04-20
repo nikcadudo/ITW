@@ -30,44 +30,6 @@ section {
     border-bottom: #8b0269 solid;
 }
 
-#navbar {
-    overflow: hidden;
-    background-color: white;
-    background-repeat: no-repeat;
-    position: fixed; 
-    top: 0; 
-    width: 100%;
-    padding-right: 200px;
-    padding-left: 200px;
-    border-bottom: #8b0269 solid;
-}
-
-#navbar img {
-    width: 70%;
-}
-
-#navbar li {
-    display: inline-block;
-}
-
-.sectionref a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-}
-
-
-.sectionref a:hover {
-    background-color: #8b0269;
-    color: white;
-    font-weight: bold;
-    background-position: bottom;
-}
-
 #main {
     margin: 0% 10%;
     background-color: white;
@@ -98,7 +60,6 @@ section {
 
 .icon img{
     width: 40%;
-    align: center;
 }
 
 .selfie {
@@ -189,9 +150,6 @@ h3 {
 
 #section-home {
     text-align: center;
-    /*background-image: url("welcome_bg.jpg");
-    background-repeat: repeat-x;
-    opacity: 50%;*/
 }
 
 #section-home a {
@@ -273,16 +231,12 @@ h3 {
     padding: 10px;
 }
 
-.elfsight-app-3541d2ab-ec61-4cd1-8811-3ab8711e35b4 {
+/*.elfsight-app-3541d2ab-ec61-4cd1-8811-3ab8711e35b4 {
     margin: 0 auto;
-}
+}*/
 
 .other p {
     font-size: 1.5em;
-}
-
-.ham-menu {
-    display: none;
 }
 
 @media (min-width: 1200px){
@@ -298,10 +252,11 @@ h3 {
         border-bottom: #8b0269 solid;
     }
 
-    #navbar {
+    .nav-menu {
+        display: flex;
+        align-items: flex-end;
         overflow: hidden;
         background-color: white;
-        background-repeat: no-repeat;
         position: fixed; 
         top: 0; 
         width: 100%;
@@ -309,13 +264,53 @@ h3 {
         padding-left: 200px;
         border-bottom: #8b0269 solid;
     }
-
-    #navbar img {
+    
+    #nd-logo {
+        float: left;
+        width: 20%;
+    }
+    
+    .logo img {
+        width: 100%;
+    }
+    
+    #dd {
+        float: left;
         width: 70%;
+        margin-left: 20px;
+    }
+
+    .dropdown img {
+        display: none;
+    }
+
+    .dropdown ul {
+        width: 100%;
+    }
+    
+    .dropdown-content li {
+        display: inline-block;
+    }
+    
+    .sectionref a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+    }
+    
+    .sectionref a:hover {
+        background-color: #8b0269;
+        color: white;
+        font-weight: bold;
+        background-position: bottom;
     }
 }
 
-@media (max-width: 1199px){
+@media (min-width: 501px) and (max-width: 1199px){
     html {
         font-size: 10px;
     }
@@ -328,10 +323,10 @@ h3 {
         border-bottom: #8b0269 solid;
     }
 
-    #navbar {
+    .nav-menu {
+        display: flex;
         overflow: hidden;
         background-color: white;
-        background-repeat: no-repeat;
         position: fixed; 
         top: 0; 
         width: 100%;
@@ -339,22 +334,33 @@ h3 {
         padding-left: 200px;
         border-bottom: #8b0269 solid;
     }
-
-    #navbar img {
+    
+    .logo {
+        float: left;
+        width: 30%;
+    }
+    
+    .logo img {
+        width: 100%;
+    }
+    
+    .dropdown {
+        float: left;
         width: 70%;
     }
-}
 
-@media (max-width: 500px){
-    #navbar {
-        overflow: hidden;
-        position: relative;
-    }
-
-    .navbar-nav {
+    .dropdown img {
         display: none;
     }
 
+    .dropdown ul {
+        width: 100%;
+    }
+    
+    .dropdown-content li {
+        display: inline-block;
+    }
+    
     .sectionref a {
         float: left;
         color: black;
@@ -365,10 +371,6 @@ h3 {
         letter-spacing: 0.2em;
     }
     
-    .navbar-nav img {
-        width: 10%;
-    }
-    
     .sectionref a:hover {
         background-color: #8b0269;
         color: white;
@@ -376,19 +378,91 @@ h3 {
         background-position: bottom;
     }
 
-    .ham-menu a {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
+}
+
+@media (max-width: 500px){
+    html {
+        font-size: 10px;
     }
 
-    .ham-menu {
-        display: block;
+#empty {
+    padding:0px;
+}
+
+.nav-menu {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    border-bottom: #8b0269 solid;
+}
+
+#section-contact img{
+    width: 18%;
+}
+
+    .logo {
+        float: left;
+        background-color: white;
+        text-align: center;
+        width: 75%;
     }
 
-    .ham-menu img {
-        width: 10%;
+    .logo img {
+        width: 50%;
     }
+
+    /* Dropdown Button */
+.dropbtn {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+  }
+
+  .dropbtn img {
+      width: 10%;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #bb86ae;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    position: fixed;
+    text-align: right;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+
+  .dropdown-content li{
+      display: inline-block;
+  }
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display: block;}
 
 }
